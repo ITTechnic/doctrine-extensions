@@ -86,7 +86,7 @@ class DateFormat extends AbstractPlatformAwareFunctionNode
         $parser->match(Lexer::T_COMMA);
 
         $this->parameters[self::FORMAT_KEY] = $parser->StringPrimary();
-        $this->validateFormat($parser);
+      //  $this->validateFormat($parser);
 
         $parser->match(Lexer::T_CLOSE_PARENTHESIS);
     }
